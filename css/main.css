@@ -368,6 +368,14 @@ textarea:focus-visible {
     color: var(--color-white);
 }
 
+:is(.blue-bg,
+    .lightblue-bg,
+    .megenta-bg,
+    .red-bg,
+    .maroon-bg) :is(.btn-secondary) {
+    color: var(--color-default);
+}
+
 .pink-bg a,
 .orange-bg a {
     color: var(--color-dark);
@@ -1196,7 +1204,11 @@ a:hover .info-card .svg-arrow {
     width: 50%;
     height: 100%;
     overflow-y: auto;
-    margin-top: 85px;
+    margin-top: 84px;
+}
+
+.checker-container.full {
+    width: 100%;
 }
 
 .checker-container-header {
@@ -1243,8 +1255,9 @@ a:hover .info-card .svg-arrow {
     margin-top: 15px;
 }
 
-.qn-stepper .back-btn {
+.qn-stepper .stepper-btn {
     position: absolute;
+    top: 0;
     padding: 20px;
     padding-left: 0;
     font-size: 16px;
@@ -1321,6 +1334,7 @@ a:hover .info-card .svg-arrow {
     width: fit-content;
     padding: 5px 10px;
 }
- .height-auto {
+
+.height-auto {
     height: auto !important;
-} 
+}
