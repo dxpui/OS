@@ -728,6 +728,9 @@ header .search-box {
     margin-left: 30px;
     text-decoration: none;
 }
+.header .header-link:hover {
+    text-decoration: underline;
+}
 
 
 /*--------------------------------------------------------------
