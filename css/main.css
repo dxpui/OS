@@ -290,7 +290,7 @@ textarea:focus-visible {
 }
 
 .fs-sm {
-    font-size: 1.25rem;
+    font-size: 1.188rem;
 }
 
 .component-margin {
@@ -443,7 +443,7 @@ textarea:focus-visible {
     border-radius: 30px;
     font-style: normal;
     font-weight: 400;
-    padding: 10px 50px;
+    padding: 10px 40px;
 }
 
 .btn-secondary:hover,
@@ -451,6 +451,26 @@ textarea:focus-visible {
     background-color: var(--color-default);
     color: var(--color-white);
     border: 1px solid var(--color-white);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+    text-decoration: underline !important;
+}
+
+.blue-bg .btn-secondary {
+    background-color: var(--color-default);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 40px;
+}
+
+.blue-bg .btn-secondary:hover,
+.blue-bg .btn-secondary:focus {
+    background-color: var(--color-white);
+    color: var(--color-default);
+    border: 1px solid var(--color-default);
     -webkit-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
     text-decoration: underline !important;
@@ -467,6 +487,38 @@ textarea:focus-visible {
 .btn-secondary.hover-none:focus-visible {
     outline: 3px solid var(--color-outline-focus);
     outline-offset: 0;
+}
+
+.btn-edit {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px 30px;
+}
+
+.btn-edit:hover,
+.btn-edit:focus {
+    background-color: var(--color-white);
+    color: var(--color-default);
+    border: 1px solid var(--color-default);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+    text-decoration: underline !important;
+}
+
+.btn-green {
+    background-color: var(--color-green) !important;
+    color: var(--color-default) !important;
+    border: 1px solid var(--color-default) !important;
+}
+
+.btn-green:hover {
+    background-color: var(--color-white) !important;
+    color: var(--color-default) !important;
+    border: 1px solid var(--color-white) !important;
 }
 
 .center-icon-btn {
@@ -728,6 +780,7 @@ header .search-box {
     margin-left: 30px;
     text-decoration: none;
 }
+
 .header .header-link:hover {
     text-decoration: underline;
 }
@@ -1013,6 +1066,47 @@ a:focus .info-card .info-card-header {
     background-color: var(--color-light-gray);
 }
 
+.blue-bg .accordion-item .accordion-button,
+.blue-bg .accordion-item .accordion-header .accordion-button {
+    background-color: var(--color-default);
+    color: var(--color-white) !important;
+
+}
+
+.blue-bg .accordian-panel .accordion-header:hover .accordion-button.collapsed,
+.blue-bg .accordian-panel .accordion-header .accordion-button.collapsed:focus {
+    background-color: var(--color-default);
+    color: var(--color-white);
+}
+
+.blue-bg .accordian-panel {
+    border-top: 1px solid var(--color-white) !important;
+}
+
+.blue-bg .accordian-panel .card-body,
+.blue-bg .accordian-panel :not(.show) .card-body {
+    background-color: var(--color-default) !important;
+    color: var(--color-white) !important;
+}
+
+.blue-bg .accordian-panel .accordion-button:not(.collapsed) {
+    animation: none;
+}
+
+.white-bg .accordion-item .accordion-header .accordion-button.collapsed[aria-expanded="true"] {
+    background-color: var(--color-light-gray);
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed,
+.accordion-item:last-of-type>.accordion-collapse {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
 /* .accordian-panel .show::after {
     position: absolute;
     animation: colorChange .5s forwards;
@@ -1136,14 +1230,14 @@ a:hover .info-card .svg-arrow {
     width: 90%;
 }
 
-.sub-navigation {
+.left-container {
     background-color: var(--color-default);
     color: var(--color-white);
     padding: 10px 30px 40px 30px;
     height: 100%;
 }
 
-.sub-navigation .sub-navigation-header {
+.left-container .left-container-header {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 1.188rem;
@@ -1151,32 +1245,65 @@ a:hover .info-card .svg-arrow {
     text-decoration: underline;
 }
 
-.sub-navigation ul {
+.left-container ul.left-nav {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.sub-navigation a {
+.left-container a {
     color: var(--color-white);
     margin-bottom: 10px;
 }
 
-.sub-navigation a:hover span {
+.left-container a:hover span {
     text-decoration: underline;
 }
 
-/* .sub-navigation:hover a i {
+/* .left-container:hover a i {
     color: var(--color-gray);
 } */
-.left-container {
+.right-container {
     margin-top: 2rem;
     margin-left: 1rem;
 }
 
-.general-info .top-header {
+/* .general-info .top-header {
     font-size: 1.188rem;
     margin-bottom: 1.5rem;
+} */
+
+.qn-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qn-type .qn-text {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.ans-text {
+    margin: 15px 10px;
+}
+
+.info-box {
+    border: 1px solid var(--color-gray);
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.info-box ul.list-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info-box ul.list-info li {
+    background-color: var(--color-light-gray);
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 .footer h2 {
