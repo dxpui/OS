@@ -1338,3 +1338,13 @@ a:hover .info-card .svg-arrow {
         margin: 20px 0;
     }
 }
+
+@media print {
+    .help, .back, .btn-edit, .next-step, .download, .step, .save, 
+    #non-printable {
+        display: none !important;
+    }
+    #printable {
+        display: block;
+    }
+}
