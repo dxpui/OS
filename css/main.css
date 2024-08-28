@@ -1369,6 +1369,10 @@ a:hover .info-card .svg-arrow {
         height: auto !important;
     }
 
+    .order-last-div{
+        order: 6;
+    }
+
         .accordian-panel .accordion-button::after {
             background-image: none !important;
         }
