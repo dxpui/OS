@@ -1235,6 +1235,8 @@ a:hover .info-card .svg-arrow {
     color: var(--color-white);
     padding: 10px 30px 40px 30px;
     height: 100%;
+    /* position:absolute; */
+    
 }
 
 .left-container .left-container-header {
@@ -1340,11 +1342,58 @@ a:hover .info-card .svg-arrow {
 }
 
 @media print {
-    .help, .back, .btn-edit, .next-step, .download, .step, .save, 
+
+    .header,
+    .footer,
+    .help,
+    .back,
+    .btn-edit,
+    .next-step,
+    .download,
+    .step,
+    .save,
     #non-printable {
         display: none !important;
     }
+
     #printable {
         display: block;
     }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .collapse {
+        display: block !important;
+        height: auto !important;
+    }
+
+        .accordian-panel .accordion-button::after {
+            background-image: none !important;
+        }
+
+        .summary-pdf-print-class{
+            font-size: 3rem !important;
+            text-align: center !important;
+            display:table;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px !important;
+        }
+}
+
+.h1-text-align {
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+
+.mr-2{
+    margin-right: 10px
+}
+
+.btn-color-white{
+    background-color: var(--color-white) !important;
+    color: var(--color-default) !important;
 }
