@@ -1400,3 +1400,21 @@ a:hover .info-card .svg-arrow {
     background-color: var(--color-white) !important;
     color: var(--color-default) !important;
 }
+
+.bg-color-default {
+    background-color: var(--color-default) !important;
+}
+
+.step-title{
+    color: var(--color-white);
+    font-family: var(--font-family-default);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.panel-border-bottom:last-child {
+    border-bottom: 1px solid var(--color-white) !important
+}
