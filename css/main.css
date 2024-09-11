@@ -261,6 +261,12 @@ textarea:focus-visible {
     align-items: center;
 }
 
+.form-check-qtype {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .responsive-image {
     width: 100%;
     object-fit: cover;
