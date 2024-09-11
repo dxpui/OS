@@ -1242,7 +1242,7 @@ a:hover .info-card .svg-arrow {
     padding: 10px 30px 40px 30px;
     height: 100%;
     /* position:absolute; */
-    
+
 }
 
 .left-container .left-container-header {
@@ -1375,22 +1375,22 @@ a:hover .info-card .svg-arrow {
         height: auto !important;
     }
 
-    .order-last-div{
+    .order-last-div {
         order: 6;
     }
 
-        .accordian-panel .accordion-button::after {
-            background-image: none !important;
-        }
+    .accordian-panel .accordion-button::after {
+        background-image: none !important;
+    }
 
-        .summary-pdf-print-class{
-            font-size: 3rem !important;
-            text-align: center !important;
-            display:table;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 15px !important;
-        }
+    .summary-pdf-print-class {
+        font-size: 3rem !important;
+        text-align: center !important;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px !important;
+    }
 }
 
 .h1-text-align {
@@ -1398,11 +1398,11 @@ a:hover .info-card .svg-arrow {
     margin-bottom: 40%;
 }
 
-.mr-2{
+.mr-2 {
     margin-right: 10px
 }
 
-.btn-color-white{
+.btn-color-white {
     background-color: var(--color-white) !important;
     color: var(--color-default) !important;
 }
@@ -1411,7 +1411,7 @@ a:hover .info-card .svg-arrow {
     background-color: var(--color-default) !important;
 }
 
-.step-title{
+.step-title {
     color: var(--color-white);
     font-family: var(--font-family-default);
     font-size: 14px;
@@ -1423,4 +1423,106 @@ a:hover .info-card .svg-arrow {
 
 .panel-border-bottom:last-child {
     border-bottom: 1px solid var(--color-white) !important
+}
+
+.container-input,
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 12px;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: .875rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-input input,
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-input .checkmark,
+.container-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+
+/* .container-input .checkmark {
+} */
+
+.container-input:hover input ~ .checkmark {
+  background-color: var(--color-gray);
+}
+
+.container-input input:checked ~ .checkmark {
+  background-color: var(--color-white);
+}
+
+.container-input .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-input input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-input .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 10px;
+  height: 18px;
+  border: solid var(--color-default);
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+.container-radio .checkmark {
+  border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark {
+  background-color: var(--color-white);
+}
+
+.container-radio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  border-radius: 50%;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-radio .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  background: var(--color-default);
+}
+
+.container-input .checkmark:focus,
+.container-radio .checkmark:focus {
+    border: 1px solid var(--color-default);
+    box-shadow: var(--btn-focus-box-shadow);
 }
