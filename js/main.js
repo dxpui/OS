@@ -62,3 +62,18 @@ $(document).ready(function() {
         checkScroll();
     });
 });
+
+$(document).ready(function() {
+    $('#right-container').hide();
+    //set initial state.
+    $('#exampleCheck5').val(this.checked);
+
+    $('#exampleCheck5').change(function() {
+        if(this.checked) {
+            $('#right-container').show();
+        }else{
+            $('#right-container').hide();
+        }
+        $('#exampleCheck5').val(this.checked);        
+    });
+});
