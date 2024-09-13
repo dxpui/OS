@@ -76,4 +76,35 @@ $(document).ready(function() {
         }
         $('#exampleCheck5').val(this.checked);        
     });
+
+    $('#flexRadioDefault1').change(function() {
+        if(this.checked) {
+            $('#right-container').show();
+        }else{
+            $('#right-container').hide();
+        }
+        $('#flexRadioDefault1').val(this.checked);        
+    });
+
+    $('#flexRadioDefault2').change(function() {
+        if(this.checked) {
+            $('#right-container').hide();
+           
+        }else{
+            $('#right-container').show();
+        }
+        $('#flexRadioDefault2').val(this.checked);        
+    });
+
+    $('#exampleCheck2').change(function() {
+        if(this.checked) {
+            $('#right-container').show();
+        }else{
+            $('#right-container').hide();
+        }
+        $('#exampleCheck2').val(this.checked);        
+    });
+
+
+
 });
