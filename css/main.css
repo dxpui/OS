@@ -474,9 +474,19 @@ textarea:focus-visible {
 
 .blue-bg .btn-secondary:hover,
 .blue-bg .btn-secondary:focus {
-    background-color: var(--color-white);
-    color: var(--color-default);
-    border: 1px solid var(--color-default);
+    background-color: var(--color-white) !important;
+    color: var(--color-default) !important;
+    border: 1px solid var(--color-default) !important;
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+    text-decoration: underline !important;
+}
+
+.blue-bg .btn-secondary.btn-color-white:hover,
+.blue-bg .btn-secondary.btn-color-white:focus {
+    background-color: var(--color-default) !important;
+    color: var(--color-white) !important;
+    border: 1px solid var(--color-white) !important;
     -webkit-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
     text-decoration: underline !important;
@@ -1449,6 +1459,12 @@ a:hover .info-card .svg-arrow {
   width: 0;
 }
 
+.container-input input:focus + .checkmark,
+.container-radio input:focus + .checkmark {
+  box-shadow: 0 0 2px 3px var(--color-focus, #FF8A00); 
+  outline: none;
+}
+
 .container-input .checkmark,
 .container-radio .checkmark {
   position: absolute;
@@ -1519,10 +1535,4 @@ a:hover .info-card .svg-arrow {
   width: 18px;
   height: 18px;
   background: var(--color-default);
-}
-
-.container-input .checkmark:focus,
-.container-radio .checkmark:focus {
-    border: 1px solid var(--color-default);
-    box-shadow: var(--btn-focus-box-shadow);
 }
