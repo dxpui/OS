@@ -904,6 +904,7 @@ header .search-box {
     margin-bottom: 10px;
     word-break: break-word;
     background-color: var(--color-light-gray);
+    border: 1.3px solid rgb(205 193 193)
 }
 
 /* .info-card::before {
@@ -1535,4 +1536,7 @@ a:hover .info-card .svg-arrow {
   width: 18px;
   height: 18px;
   background: var(--color-default);
+}
+.padding-10px {
+    padding: 10px;
 }
