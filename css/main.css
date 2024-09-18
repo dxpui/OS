@@ -1572,3 +1572,7 @@ a:hover .info-card .svg-arrow {
 .input-error {
     border-color: var(--color-red);
 }
+
+.your-answer-pdng-left{
+    padding-left: 70px !important;
+}
