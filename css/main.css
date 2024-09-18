@@ -462,8 +462,8 @@ textarea:focus-visible {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: var(--color-default);
-    color: var(--color-white);
+    background-color: var(--color-secondary);
+    color: var(--color-default);
     border: 1px solid var(--color-white);
     -webkit-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
@@ -482,7 +482,7 @@ textarea:focus-visible {
 
 .blue-bg .btn-secondary:hover,
 .blue-bg .btn-secondary:focus {
-    background-color: var(--color-white) !important;
+    background-color: var(--color-secondary) !important;
     color: var(--color-default) !important;
     border: 1px solid var(--color-default) !important;
     -webkit-transition: all .3s linear 0s;
@@ -538,7 +538,7 @@ textarea:focus-visible {
 
 .btn-edit:hover,
 .btn-edit:focus {
-    background-color: var(--color-white);
+    background-color: var(--color-secondary);
     color: var(--color-default);
     border: 1px solid var(--color-default);
     -webkit-transition: all .3s linear 0s;
@@ -546,13 +546,14 @@ textarea:focus-visible {
     text-decoration: underline !important;
 }
 
-.btn-green {
+.btn-secondary.btn-green {
     background-color: var(--color-green) !important;
     color: var(--color-default) !important;
     border: 1px solid var(--color-default) !important;
 }
 
-.btn-green:hover {
+.btn-secondary.btn-green:hover,
+.btn-secondary.btn-green:focus {
     background-color: var(--color-white) !important;
     color: var(--color-default) !important;
     border: 1px solid var(--color-white) !important;
@@ -778,7 +779,7 @@ header .search-box {
 --------------------------------------------------------------*/
 
 .brand-logo {
-    height: 36px;
+    height: 26px;
     width: auto;
 }
 
