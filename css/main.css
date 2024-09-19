@@ -501,7 +501,8 @@ textarea:focus-visible {
 }
 
 .btn-secondary:active {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary) !important;
+    color: var(--color-default) !important;
 }
 
 .btn-secondary.hover-none {
@@ -554,9 +555,14 @@ textarea:focus-visible {
 
 .btn-secondary.btn-green:hover,
 .btn-secondary.btn-green:focus {
-    background-color: var(--color-white) !important;
+    background-color: var(--color-secondary) !important;
     color: var(--color-default) !important;
-    border: 1px solid var(--color-white) !important;
+}
+
+.blue-bg .btn-secondary.btn-green.disabled {
+    background-color: var(--color-gray) !important;
+    color: var(--color-default) !important;
+    border: 1px solid var(--color-gray) !important;
 }
 
 .center-icon-btn {
@@ -807,6 +813,15 @@ header .search-box {
     font-size: 1.875rem;
     color: #000000;
     font-weight: 700;
+    text-decoration: none;
+}
+
+.header .header-title {
+    font-weight: 700;
+    color: var(--color-default);
+    border-left: 3px solid var(--color-default);
+    padding: 0 0 0 30px;
+    margin-left: 30px;
     text-decoration: none;
 }
 
@@ -1294,7 +1309,11 @@ a:hover .info-card .svg-arrow {
 
 .left-container a {
     color: var(--color-white);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.left-container a.active {
+    color: var(--color-secondary);
 }
 
 .left-container a:hover span {
@@ -1573,6 +1592,6 @@ a:hover .info-card .svg-arrow {
     border-color: var(--color-red);
 }
 
-.your-answer-pdng-left{
+.your-answer-pdng-left {
     padding-left: 70px !important;
 }
