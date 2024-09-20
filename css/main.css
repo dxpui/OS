@@ -1032,7 +1032,8 @@ a:focus .info-card .info-card-header {
 }
 
 .accordian-panel .accordion-button::after {
-    background-image: url("../assets/img/web-icons/Accordion expand.svg");
+    background-image: url("../assets/img/web-icons/Accordion\ expand\ -\ blue.svg");
+    /* background-image: url("../assets/img/web-icons/Accordion expand.svg"); */
     transform: scale(.7) !important;
     color: var(--color-default);
     background-size: 48px 48px;
@@ -1040,18 +1041,19 @@ a:focus .info-card .info-card-header {
 }
 
 .accordian-panel .accordion-button:not(.collapsed)::after {
-    background-image: url("../assets/img/web-icons/Accordion contract.svg");
+    background-image: url("../assets/img/web-icons/Accordion\ contract\ -\ blue.svg");
+    /* background-image: url("../assets/img/web-icons/Accordion contract.svg"); */
     font-size: 2.5rem;
     color: var(--color-default);
 }
 
-.accordian-panel .accordion-header:hover .accordion-button::after {
+/* .accordian-panel .accordion-header:hover .accordion-button::after {
     background-image: url("../assets/img/web-icons/Accordion\ expand\ -\ orange.svg");
 }
 
 .accordian-panel .accordion-header:hover .accordion-button:not(.collapsed)::after {
     background-image: url("../assets/img/web-icons/Accordion\ contract\ -\ orange.svg");
-}
+} */
 
 .accordian-panel {
     border: none !important;
