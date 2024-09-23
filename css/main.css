@@ -585,6 +585,11 @@ textarea:focus-visible {
     right: 15px;
 }
 
+.save-link:hover,
+.save-link:focus {
+    color: var(--color-secondary);
+}
+
 /*--------------------------------------------------------------
 # Header Search
 --------------------------------------------------------------*/
