@@ -52,62 +52,72 @@
         <div class="blue-bg full-container" style="min-height: 700px;">
           <div class="row">
             <div class="col-md-8">
-
-              <h1 class="mb-5" id="skipToContent">What type of service do you provide?</h1>
-              <p>
-                Your answer helps us tailor the content of our digital tool to your service. This is important because
-                there are distinctions between the duties that you must demonstrate compliance with. Not sure? Our
-                Regulation Checker tool provides more guidance on these service types and whether any exemptions apply.
-              </p>
-              <div class="border-gray p-4 mb-4">
-                <div class="d-flex">
-                  <i class="fa-solid fa-circle-info me-4" style="font-size: 32px;"></i>
-                  <p class="mb-0">If you provide more than one service (for example, two distinct user-to-user
-                    services), you must complete a separate risk assessment for each service. If you provide a combined
-                    service, you must comply with both the U2U service and search service risk assessment duties.</p>
+                <div class="orange-bg p-4 mb-4">
+                  <div class="d-flex">
+                    <i class="fa-solid fa-triangle-exclamation me-4" style="font-size: 32px;"></i>
+                    <p class="fs-sm">Warning!</p>
+                  </div>
+                  <div class="m-left-60">
+                    <p>
+                      Store this number somewhere safely. Once you leave this screen, you will not be able to retrieve
+                      this number. If you do loose your unique reference number, you will need to start your assessment
+                      again from the start.
+                    </p>
+                  </div>
                 </div>
-              </div>
+                <h1 id="skipToContent">Your unique reference number</h1>
+                <p class="mt-4">
+                  You will need this number in order to continue your assessment.
+                </p>
 
-              <div class="mt-5">
-                <div>
-                  <label class="container-radio mb-4" for="flexRadioDefault1">‘User-to-user’ service
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <span class="checkmark"></span>
-                  </label>
-                  <p class="m-left-45">
-                    A user-to-user service is an online service that allows its users to interact with each other. This
-                    includes the ability to generate, upload or share content, such as images, videos, messages or
-                    comments, with other users of that online service.
-                    User-to-user services include online services which allow private messaging between users.
-                    Here, you do not need to consider content that you (the online service provider) publish directly,
-                    as it is not relevant for this question.
-                  </p>
-                  <label class="container-radio" for="flexRadioDefault2">Search engine
-                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <span class="checkmark"></span>
-                  </label>
-                  <p class="m-left-45">
-                    A search service is an online service which is, or includes, a search engine. A search engine is a
-                    feature which enable users to search more than one website and/or database.
-                    However, if your online service only searches one website or database, it will not be classed as a
-                    search service. For example, where a website has a search bar feature to find content internally on
-                    that website.
-                    Some online services use or embed a search engine provided by a third party (e.g. as a “plug in”).
-                    Where this embedded search engine is not controlled by you but by a third party, the regulations
-                    related to search services are likely to apply to the third party.
-                  </p>
+                <div class="d-flex justify-content-center align-items-center border-gray p-4"><span
+                    class="fs-32">OSAXXXYZ123</span> <a href="" class="ms-2" style="font-size: 24px;">
+                    <span class="visually-hidden-focusable">Copy Text</span>
+                    <i class="fa-regular fa-copy"></i>
+                  </a></div>
+
+
+                <div class="mt-5">
+                  <!-- <div class="col-lg-10">
+                  <div id="text-error" class="form-error" role="alert" aria-live="polite">Error message, for example
+                    field is required</div>
+                  <label class="visually-hidden-focusable" for="text-error" class="form-label">Text</label>
+                  <input type="text" class="form-control input-error" id="text-error">
+                </div> -->
+
+                  <form class="row g-3">
+                    <div class="col">
+                      <label for="code" class="mb-1">Email the unique reference code</label>
+                      <input type="text" class="form-control" id="code">
+                    </div>
+                    <div class="col-auto ms-auto">
+                      <button type="submit" class="btn btn-secondary mt-4">Send Code</button>
+                    </div>
+                  </form>
+                  <div class="mt-5">
+                    <label class="container-input pt-0" for="exampleCheck2">I have saved (or emailed) the unique
+                      reference
+                      number
+                      so I can return to the service and continue a saved assessment. I understand that by not saving
+                      this
+                      unique reference number I will be unable to return to this assessment and will have to create a
+                      new
+                      assessment.
+                      <input type="checkbox" id="exampleCheck2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+
+
+                  <button class="btn btn-secondary d-block my-2 btn-green step mt-5 disabled">Continue <i
+                      class="fa-solid fa-arrow-right ms-2"></i></button>
+
                 </div>
-                <button class="btn btn-secondary disabled my-2 btn-green step mt-5">Continue <i
-                    class="fa-solid fa-arrow-right ms-2"></i></button>
-
-              </div>
-
-            
-          </div>
-          <div class="col-md-2">
+            </div>
+            <div class="col-md-2">
+            </div>
           </div>
         </div>
-       </div>
       </div>
     </section>
     <section class="container-xxl mt-4">

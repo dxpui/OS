@@ -299,6 +299,10 @@ textarea:focus-visible {
     font-size: 1.188rem;
 }
 
+.fs-32 {
+    font-size: 2rem;
+}
+
 .component-margin {
     margin-bottom: 3rem;
 }
@@ -1313,16 +1317,16 @@ a:hover .info-card .svg-arrow {
     padding: 0;
 }
 
-.left-container a {
+.left-container ul a {
     color: var(--color-white);
     margin-bottom: 15px;
 }
 
-.left-container a.active {
+.left-container ul a.active {
     color: var(--color-secondary);
 }
 
-.left-container a:hover span {
+.left-container ul a:hover span {
     text-decoration: underline;
 }
 
@@ -1338,6 +1342,10 @@ a:hover .info-card .svg-arrow {
     font-size: 1.188rem;
     margin-bottom: 1.5rem;
 } */
+.full-container {
+    padding: 70px 30px 40px 70px;
+    height: 100%;
+}
 
 .qn-type {
     display: flex;
