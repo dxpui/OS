@@ -1306,10 +1306,9 @@ a:hover .info-card .svg-arrow {
 .left-container {
     background-color: var(--color-default);
     color: var(--color-white);
-    padding: 10px 30px 40px 30px;
+    padding: 10px 30px 40px 70px;
     height: 100%;
     /* position:absolute; */
-
 }
 
 .left-container .left-container-header {
@@ -1341,6 +1340,10 @@ a:hover .info-card .svg-arrow {
 
 .left-container ul a:hover span {
     text-decoration: underline;
+}
+
+.left-container-with-link{
+    padding: 10px 30px 40px 40px;
 }
 
 /* .left-container:hover a i {
