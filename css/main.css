@@ -1418,7 +1418,8 @@ a:hover .info-card .svg-arrow {
     text-decoration: none;
 }
 
-.footer ul li a:hover {
+.footer ul li a:hover,
+.footer ul li a:focus {
     text-decoration: underline;
     color: var(--color-secondary);
 }
