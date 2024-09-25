@@ -961,6 +961,10 @@ header .search-box {
     border: 1.3px solid rgb(205 193 193)
 }
 
+.info-card.white {
+    background-color: var(--color-white);
+}
+
 /* .info-card::before {
     content: '';
     display: block;
@@ -1343,7 +1347,7 @@ a:hover .info-card .svg-arrow {
 }
 
 .left-container-with-link{
-    padding: 10px 30px 40px 40px;
+    padding: 40px 30px 40px 40px;
 }
 
 /* .left-container:hover a i {
@@ -1352,12 +1356,18 @@ a:hover .info-card .svg-arrow {
 .right-container {
     margin-top: 2rem;
     margin-left: 1rem;
+    margin-bottom: 4rem;
 }
 
 /* .general-info .top-header {
     font-size: 1.188rem;
     margin-bottom: 1.5rem;
 } */
+
+.general-info{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 .full-container {
     padding: 70px 30px 40px 70px;
     height: 100%;
