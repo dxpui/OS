@@ -58,7 +58,6 @@
           </div>
         </div>
 
-
         <div class="row mt-5">
           <div class="col-md-8 order-last-div">
             <div class="left-container pt-5 blue-bg">
@@ -195,44 +194,139 @@
                 </div>
               </section>
 
-              <section >
+              <section>
                 <label class="mt-4">Buttons Disabled</label>
                 <button class="btn btn-secondary d-block my-2 btn-green step mt-4 disabled">Large Button with Arrow <i
                     class="fa-solid fa-arrow-right ms-2"></i></button>
-                    <label>Large</label>
+                <label>Large</label>
                 <button class="btn btn-secondary d-block my-2 btn-green step mt-4 disabled">Large Button </button>
                 <label>Small</label>
-                    <button class="btn btn-secondary d-block my-2 btn-green step mt-4 disabled  btn-sm">Small Buton </button>
+                <button class="btn btn-secondary d-block my-2 btn-green step mt-4 disabled  btn-sm">Small Buton
+                </button>
 
               </section>
 
-              <section >
-                <label class="mt-4">Buttons Disabled</label>
+              <section>
+                <label class="mt-4">Buttons</label>
+                <button class="btn btn-secondary d-block my-2 btn-green step mt-4 noHover">Large Button with Arrow <i
+                    class="fa-solid fa-arrow-right ms-2"></i></button>
+                <label>Large</label>
+                <button class="btn btn-secondary d-block my-2 btn-green step mt-4 noHover">Large Button </button>
+                <label>Small</label>
+                <button class="btn btn-secondary d-block my-2 btn-green step mt-4  noHover btn-sm">Small Buton </button>
+              </section>
+
+              <section>
+                <label class="mt-4">Buttons (Hover States)</label>
                 <button class="btn btn-secondary d-block my-2 btn-green step mt-4 ">Large Button with Arrow <i
                     class="fa-solid fa-arrow-right ms-2"></i></button>
-                    <label>Large</label>
+                <label>Large</label>
                 <button class="btn btn-secondary d-block my-2 btn-green step mt-4 ">Large Button </button>
                 <label>Small</label>
-                    <button class="btn btn-secondary d-block my-2 btn-green step mt-4   btn-sm">Small Buton </button>
-
+                <button class="btn btn-secondary d-block my-2 btn-green step mt-4   btn-sm">Small Buton </button>
               </section>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section class="container-xxl mt-4">
-      <div class="row g-0">
-        <div class="col-12">
-          <div class="row row-cols-auto g-0 multicolor-strip">
-            <div class="bg-blue"></div>
-            <div class="bg-megenta"></div>
-            <div class="bg-pink"></div>
-            <div class="bg-yellow"></div>
-            <div class="bg-green"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+              <section>
+                <form class="row g-3 mt-4">
+                  <div class="col">
+                    <label for="code" class="mb-1">Input field label </label>
+                    <p>Hint text for this label. sed enim odio, accumsan dapibus
+                      facilisis egestas, fringilla in arcu. Nulla in erat et felis fringilla suscipit..
+                    </p>
+                    <input type="text" class="form-control" id="code">
+                  </div>
+                </form>
+                <form class="row g-3 mt-3">
+                  <div class="col">
+                    <label for="code" class="mb-1">Input field label </label>
+                    <input type="text" class="form-control" id="code">
+                  </div>
+                </form>
+                <form class="row g-3 mt-3">
+                  <div class="col">
+                    <label for="code" class="mb-1">Input field label </label>
+                    <input type="text" class="form-control" placeholder="Text input focus state" id="code">
+                  </div>
+                </form>
+              </section>
+              <section>
+                <div class="red-bg p-4 mb-4">
+                  <div class="d-flex">
+                    <i class="fa-solid fa-triangle-exclamation me-4" style="font-size: 32px;"></i>
+                    <p class="fs-sm">Error message title</p>
+                  </div>
+                  <div class="m-left-60">
+                    <p>
+                      Aenean leo magna, egestas eu tincidunt et, dignissim vel purus. Suspendisse quam ex, ultricies a
+                      nisl sit amet, congue tincidunt nibh. Pellentesque scelerisque suscipit maximus.
+                    </p>
+                    <ul class="ps-3">
+                      <li>
+                        Error message, for example field is required
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="mt-5">
+                  <div class="col-lg-10">
+                    <div id="text-error" class="form-error" role="alert" aria-live="polite">Error message, for example
+                      field is required</div>
+                    <label class="visually-hidden-focusable" for="text-error" class="form-label">Text</label>
+                    <input type="text" class="form-control input-error" id="text-error">
+                  </div>
+                </div>
+              </section>
+
+              <section></section>
+                <div class="mt-5">
+                  <div class="col-lg-10">
+                    <div id="text-error" class="form-error" role="alert" aria-live="polite">Error message, for example
+                      field is required</div>
+                    <label class="visually-hidden-focusable" for="text-error" class="form-label">Text</label>
+                    <input type="text" class="form-control input-error" id="text-error">
+                    <h2 class="qn-text mt-5">Radio input groups</h2>
+                    <label class="mb-3"><b>Group label orem ipsum dolor sit ament</b></label>
+                    <div>
+                      <label class="container-radio display-inline-block mr-2" for="exampleCheck8">Loreum ipsum
+                        <input type="radio" id="exampleCheck8">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container-radio display-inline-block mr-2" for="exampleCheck8"> Loreum ipsum
+                        <input type="radio" id="exampleCheck8">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container-radio display-inline-block mr-2" for="exampleCheck8"> Loreum ipsum
+                        <input type="radio" id="exampleCheck8">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container-radio display-inline-block mr-2" for="exampleCheck8"> Loreum ipsum
+                        <input type="radio" id="exampleCheck8">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- </div>
+    </div>
+    </div>
+    </section> -->
+              <section class="container-xxl mt-4">
+                <div class="row g-0">
+                  <div class="col-12">
+                    <div class="row row-cols-auto g-0 multicolor-strip">
+                      <div class="bg-blue"></div>
+                      <div class="bg-megenta"></div>
+                      <div class="bg-pink"></div>
+                      <div class="bg-yellow"></div>
+                      <div class="bg-green"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
   </main>
   <footer class="footer">
 
