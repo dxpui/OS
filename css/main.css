@@ -342,8 +342,8 @@ textarea:focus-visible {
 }
 
 .blue-bg {
-    background-color: var(--color-default);
-    color: var(--color-white);
+    background-color: var(--color-default) !important;
+    color: var(--color-white) !important;
 }
 
 .lightblue-bg {
@@ -1406,6 +1406,14 @@ a:hover .info-card .svg-arrow {
     margin-bottom: 10px;
 }
 
+.info-box ul.list-info-blue-bg li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: var(--color-default) !important;
+    color: var(--color-white) !important;
+    list-style: none;
+}
+
 .footer h2 {
     font-size: 1rem;
     font-weight: 700;
@@ -1644,4 +1652,8 @@ a:hover .info-card .svg-arrow {
 
 .noHover{
     pointer-events: none;
+}
+
+ul.list-info-blue-bg {
+    padding-left: 0px;
 }
