@@ -1180,12 +1180,13 @@ a:focus .info-card .info-card-header {
 
 .blue-bg .accordian-panel .card-body,
 .blue-bg .accordian-panel :not(.show) .card-body {
-    background-color: var(--color-default) !important;
+    background-color: #303067 !important;
     color: var(--color-white) !important;
 }
 
 .blue-bg .accordian-panel .accordion-button:not(.collapsed) {
     animation: none;
+    background-color: #303067;
 }
 
 .white-bg .accordion-item .accordion-header .accordion-button.collapsed[aria-expanded="true"] {
