@@ -20,30 +20,22 @@ $(document).ready(function () {
     }
 });
 
-$(document).ready(function() {
-    $('.checker-container').each(function() {
+$(document).ready(function () {
+    $('.checker-container').each(function () {
         $(this).parents().addClass('height-100');
     });
 
     if ($('.checker-container').length) {
-        // $('body').addClass('position-relative');
         $('header').addClass('position-absolute');
     }
-
-    // $('.checker-container-left-inner').each(function() {
-    //     var $this = $(this);
-    //     if ($this[0].scrollHeight > $this.innerHeight() || $this[0].scrollWidth > $this.innerWidth()) {
-    //         $this.addClass('height-auto');
-    //     }
-    // });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     function checkScroll() {
-        $('.checker-container').each(function() {
+        $('.checker-container').each(function () {
             var topHeader = $('.header').height();
-            var footerHeight  = $('.qn-stepper').height();
-            var checkerContainer  = $('.checker-container').height();
+            var footerHeight = $('.qn-stepper').height();
+            var checkerContainer = $('.checker-container').height();
 
             var $firstDiv = $(this);
             var $secondDiv = $firstDiv.find('.checker-container-left-inner');
@@ -58,53 +50,77 @@ $(document).ready(function() {
 
     checkScroll();
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         checkScroll();
     });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#right-container').hide();
     //set initial state.
     $('#exampleCheck5').val(this.checked);
 
-    $('#exampleCheck5').change(function() {
-        if(this.checked) {
+    $('#exampleCheck5').change(function () {
+        if (this.checked) {
             $('#right-container').show();
-        }else{
+        } else {
             $('#right-container').hide();
         }
-        $('#exampleCheck5').val(this.checked);        
+        $('#exampleCheck5').val(this.checked);
     });
 
-    $('#flexRadioDefault1').change(function() {
-        if(this.checked) {
+    $('#flexRadioDefault1').change(function () {
+        if (this.checked) {
             $('#right-container').show();
-        }else{
+        } else {
             $('#right-container').hide();
         }
-        $('#flexRadioDefault1').val(this.checked);        
+        $('#flexRadioDefault1').val(this.checked);
     });
 
-    $('#flexRadioDefault2').change(function() {
-        if(this.checked) {
+    $('#flexRadioDefault2').change(function () {
+        if (this.checked) {
             $('#right-container').hide();
-           
-        }else{
+
+        } else {
             $('#right-container').show();
         }
-        $('#flexRadioDefault2').val(this.checked);        
+        $('#flexRadioDefault2').val(this.checked);
     });
 
-    $('#exampleCheck2').change(function() {
-        if(this.checked) {
+    $('#exampleCheck2').change(function () {
+        if (this.checked) {
             $('#right-container').show();
-        }else{
+        } else {
             $('#right-container').hide();
         }
-        $('#exampleCheck2').val(this.checked);        
+        $('#exampleCheck2').val(this.checked);
     });
+});
 
+$(document).ready(function () {
+    $(".accordian-panel").click(function () {
+        var acc = document.getElementsByClassName("accordian-panel");
+        var panel = document.getElementsByClassName('accordion-collapse');
 
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                var setClasses = !this.classList.contains('active');
+                setClass(acc, 'active', 'remove');
+                setClass(panel, 'show', 'remove');
+
+                if (setClasses) {
+                    this.classList.toggle("active");
+                    if (this.nextElementSibling) this.nextElementSibling.classList.toggle("show");
+                }
+            }
+        }
+
+        function setClass(els, className, fnName) {
+            for (var i = 0; i < els.length; i++) {
+                els[i].classList[fnName](className);
+            }
+        }
+    })
 
 });
