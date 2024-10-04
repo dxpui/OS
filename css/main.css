@@ -319,6 +319,10 @@ textarea:focus-visible {
     margin-left: 60px;
 }
 
+.m-bottom-40{
+    margin-bottom: 40px;
+}
+
 .border-gray {
     border: 1px solid var(--color-gray);
 }
