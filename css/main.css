@@ -534,13 +534,16 @@ textarea:focus-visible {
     background-color: transparent !important;
     color: var(--color-gray) !important;
     border: 1px solid var(--color-gray) !important;
+    text-decoration: none;
 }
 
-.btn-secondary.disabled:hover {
+.btn-secondary.disabled:hover,
+.btn-secondary.disabled:focus {
     background-color: transparent !important;
     color: var(--color-gray) !important;
     border: 1px solid var(--color-gray) !important;
     cursor: none;
+    text-decoration: none !important;
 }
 
 .btn-edit {
