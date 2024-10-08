@@ -319,7 +319,7 @@ textarea:focus-visible {
     margin-left: 60px;
 }
 
-.m-bottom-40{
+.m-bottom-40 {
     margin-bottom: 40px;
 }
 
@@ -1368,7 +1368,7 @@ a:hover .info-card .svg-arrow {
     text-decoration: underline;
 }
 
-.left-container-with-link{
+.left-container-with-link {
     padding: 40px 30px 40px 40px;
 }
 
@@ -1386,10 +1386,11 @@ a:hover .info-card .svg-arrow {
     margin-bottom: 1.5rem;
 } */
 
-.general-info{
+.general-info {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 .full-container {
     padding: 70px 30px 40px 70px;
     height: 100%;
@@ -1668,14 +1669,36 @@ a:hover .info-card .svg-arrow {
     padding-left: 70px !important;
 }
 
-.display-inline-block{
+.display-inline-block {
     display: inline-block !important;
 }
 
-.noHover{
+.noHover {
     pointer-events: none;
 }
 
 ul.list-info-blue-bg {
     padding-left: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--color-gray);
+}
+
+
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid var(--color-gray);
+}
+
+table thead th {
+    padding: 10px;
+    background-color: var(--color-gray);
+    color: var(--color-default);
+}
+
+.table-tr-border-btm{
+    border-bottom: 1.5px solid var(--color-default);
 }
