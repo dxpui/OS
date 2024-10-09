@@ -864,9 +864,11 @@ header .search-box {
 .header .header-link {
     /* font-size: 1rem; */
     font-weight: 700;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 0 0 0 30px;
     margin-left: 10px;
     color: var(--color-default);
+    border-left: 3px solid var(--color-default);
 }
 
 
