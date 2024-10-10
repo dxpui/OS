@@ -1355,10 +1355,19 @@ a:hover .info-card .svg-arrow {
 }
 
 /* width */
-.checker-container::-webkit-scrollbar {
+/* .checker-container::-webkit-scrollbar { */
     /* width: 15px; */
+    /* display: none; */
+/* } */
+
+.scroll-visible::-webkit-scrollbar{
+    width: 15px;
+}
+
+.scroll-hide::-webkit-scrollbar{
     display: none;
 }
+
 
 /* Track */
 .checker-container::-webkit-scrollbar-track {
