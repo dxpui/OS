@@ -1346,8 +1346,12 @@ a:hover .info-card .svg-arrow {
     position: relative;
     width: 50%;
     height: 100%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     margin-top: 138px;
+}
+
+.checker-container:hover  {
+    overflow-y: auto !important;
 }
 
 .checker-container-header {
@@ -1361,12 +1365,16 @@ a:hover .info-card .svg-arrow {
 /* } */
 
 .scroll-visible::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
 
 .scroll-hide::-webkit-scrollbar{
     display: none;
 }
+/* 
+:hover {
+    overflow-y: scroll;
+  } */
 
 
 /* Track */
