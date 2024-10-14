@@ -332,7 +332,7 @@ textarea:focus-visible {
 --------------------------------------------------------------*/
 .white-bg {
     background-color: var(--color-white);
-    color: var(--color-secondary);
+    color: var(--color-default);
 }
 
 .gray-bg {
