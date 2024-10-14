@@ -1346,7 +1346,7 @@ a:hover .info-card .svg-arrow {
     position: relative;
     width: 50%;
     height: 100%;
-    /* overflow-y: auto; */
+    overflow-y: hidden;
     margin-top: 138px;
 }
 
