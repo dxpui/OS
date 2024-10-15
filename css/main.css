@@ -118,7 +118,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 135%;
     font-weight: 700;
     word-wrap: break-word;
@@ -129,7 +129,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 1.625rem;
+    font-size: 2rem;
     line-height: 135%;
     font-weight: 700;
     word-wrap: break-word;
@@ -1701,4 +1701,10 @@ table thead th {
 
 .table-tr-border-btm{
     border-bottom: 1.5px solid var(--color-default);
+}
+
+button.accordion-button.accordion-head {
+    font-size: 19px !important;
+    font-weight: 400 !important; 
+    line-height: 28px !important;
 }
