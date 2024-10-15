@@ -116,9 +116,10 @@ h1,
 
 /* Used for: Homepage carousel, destination page titles */
 
+
 h2,
 .h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 135%;
     font-weight: 700;
     word-wrap: break-word;
@@ -129,7 +130,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 1.625rem;
+    font-size: 2rem;
     line-height: 135%;
     font-weight: 700;
     word-wrap: break-word;
@@ -1614,4 +1615,10 @@ a:hover .info-card .svg-arrow {
     position: absolute;
     width: 100%;
     top: 85px;
+}
+
+button.accordion-button.accordion-head {
+    font-size: 19px !important;
+    font-weight: 400 !important; 
+    line-height: 28px !important;
 }
