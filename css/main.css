@@ -1555,7 +1555,7 @@ a:hover .info-card .svg-arrow {
     display: block;
     position: relative;
     padding-left: 42px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     padding-top: 5px;
     cursor: pointer;
     font-size: .875rem;
@@ -1563,6 +1563,10 @@ a:hover .info-card .svg-arrow {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.container-input + p {
+    margin-top: -10px !important;
 }
 
 .container-input input,
@@ -1699,7 +1703,7 @@ table thead th {
     color: var(--color-default);
 }
 
-.table-tr-border-btm{
+.table-tr-border-btm {
     border-bottom: 1.5px solid var(--color-default);
 }
 
