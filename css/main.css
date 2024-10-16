@@ -82,11 +82,11 @@ img {
 }
 
 p {
-    word-wrap: break-word;
     margin-bottom: 1rem;
+    /* word-wrap: break-word;
     hyphens: auto;
     -ms-hyphens: auto;
-    -moz-hyphens: auto;
+    -moz-hyphens: auto; */
 }
 
 .height-100 {
