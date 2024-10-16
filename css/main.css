@@ -1717,3 +1717,7 @@ button.accordion-button.accordion-head {
     font-weight: 400 !important; 
     line-height: 28px !important;
 }
+
+.messageblock.white-bg a {
+   color: var(--color-anchor) !important;
+}
