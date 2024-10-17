@@ -1721,3 +1721,14 @@ button.accordion-button.accordion-head {
 .messageblock.white-bg a {
    color: var(--color-anchor) !important;
 }
+
+.onlyPrint {
+    display:none !important;
+} 
+
+@media print {
+    .onlyPrint {
+        display: block !important;
+    }
+}
+
