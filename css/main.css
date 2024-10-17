@@ -1722,6 +1722,14 @@ button.accordion-button.accordion-head {
    color: var(--color-anchor) !important;
 }
 
+.messageblock.blue-bg {
+    border: 1px solid var(--color-gray);
+}
+
+.blue-bg.padding-20 {
+    border: 1px solid var(--color-gray);
+}
+
 .onlyPrint {
     display:none !important;
 } 
