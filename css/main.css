@@ -1740,3 +1740,7 @@ button.accordion-button.accordion-head {
     }
 }
 
+.white-bg.padding-20.border-blue a {
+    color: var(--color-default);
+}
+
