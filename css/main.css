@@ -1481,52 +1481,6 @@ a:hover .info-card .svg-arrow {
     }
 }
 
-@media print {
-
-    .footer,
-    .help,
-    .back,
-    .btn-edit,
-    .next-step,
-    .download,
-    .step,
-    .save,
-    #non-printable {
-        display: none !important;
-    }
-
-    #printable {
-        display: block;
-    }
-
-    body {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
-
-    .collapse {
-        display: block !important;
-        height: auto !important;
-    }
-
-    .order-last-div {
-        order: 6;
-    }
-
-    .accordian-panel .accordion-button::after {
-        background-image: none !important;
-    }
-
-    .summary-pdf-print-class {
-        font-size: 3rem !important;
-        text-align: center !important;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 15px !important;
-    }
-}
-
 .h1-text-align {
     margin-top: 40%;
     margin-bottom: 40%;
@@ -1738,13 +1692,58 @@ button.accordion-button.accordion-head {
     display:none !important;
 } 
 
-@media print {
-    .onlyPrint {
-        display: block !important;
-    }
-}
-
 .white-bg.padding-20.border-blue a {
     color: var(--color-default);
 }
 
+@media print {
+
+    .onlyPrint {
+        display: block !important;
+    }
+
+    .footer,
+    .help,
+    .back,
+    .btn-edit,
+    .next-step,
+    .download,
+    .step,
+    .save,
+    #non-printable {
+        display: none !important;
+    }
+
+    #printable {
+        display: block;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .collapse {
+        display: block !important;
+        height: auto !important;
+    }
+
+    .order-last-div {
+        order: 6;
+    }
+
+    .accordian-panel .accordion-button::after {
+        background-image: none !important;
+    }
+
+    .summary-pdf-print-class {
+        font-size: 3rem !important;
+        text-align: center !important;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px !important;
+    }
+
+   
+}
