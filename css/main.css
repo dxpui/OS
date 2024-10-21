@@ -1697,11 +1697,11 @@ button.accordion-button.accordion-head {
 }
 
 @media print {
-
+ 
     .onlyPrint {
         display: block !important;
     }
-
+ 
     .footer,
     .help,
     .back,
@@ -1713,37 +1713,36 @@ button.accordion-button.accordion-head {
     #non-printable {
         display: none !important;
     }
-
+ 
     #printable {
         display: block;
     }
-
+ 
     body {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
-
+ 
     .collapse {
         display: block !important;
         height: auto !important;
     }
-
+ 
     .order-last-div {
         order: 6;
     }
-
+ 
     .accordian-panel .accordion-button::after {
         background-image: none !important;
     }
-
-    .summary-pdf-print-class {
-        font-size: 3rem !important;
-        text-align: center !important;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 15px !important;
-    }
-
-   
+ 
+    @media (orientation: landscape) {
+		.order-last-div {
+          width:100%;
+        }
+		.order-first-div {
+		  width: 100%;	
+		}
+	}
+ 
 }
