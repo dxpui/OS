@@ -311,6 +311,10 @@ textarea:focus-visible {
     font-size: .875rem;
 }
 
+.fs-16{
+    font-size: 1rem;
+}
+
 .component-margin {
     margin-bottom: 3rem;
 }
