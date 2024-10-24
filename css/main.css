@@ -1708,6 +1708,18 @@ button.accordion-button.accordion-head {
     color: var(--color-default);
 }
 
+.numberCircle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background: var(--color-default);
+    color: #fff;
+    text-align: center;
+
+    font: 14px Arial, sans-serif;
+}
+
 @media print {
  
     .onlyPrint {
