@@ -470,14 +470,17 @@
 function show_measures(id) {
     $('#safety-measures-'+id).removeClass('d-none');
 	$('#measures').hide();
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function all_measures(id) {
     $('#safety-measures-'+id).addClass('d-none');
-    $('#measures').show();	
+    $('#measures').show();
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function next_measures(id) {
     $('#safety-measures-'+id).removeClass('d-none');
     $('#safety-measures-'+(id-1)).addClass('d-none');
+	window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
 </html>

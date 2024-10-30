@@ -1362,6 +1362,7 @@ a:hover .info-card .svg-arrow {
     font-size: 1.188rem;
     font-weight: 700;
     text-decoration: underline;
+	cursor:pointer;
 }
 
 .left-container .left-container-header.active {
@@ -1383,12 +1384,32 @@ a:hover .info-card .svg-arrow {
     color: var(--color-secondary);
 }
 
+.left-container ul a:hover {
+	color: var(--color-secondary);
+}
+
 .left-container ul a:hover span {
     text-decoration: underline;
 }
 
+.left-container-header:hover {
+	color: var(--color-secondary);
+}
+
 .left-container-with-link {
     padding: 40px 30px 40px 40px;
+}
+
+.left-container-header a {
+   color: var(--color-white);
+}
+
+.left-container-header a.active {
+   color: var(--color-secondary);
+}
+
+.left-container-header a:hover {
+   color: var(--color-secondary);
 }
 
 /* .left-container:hover a i {
