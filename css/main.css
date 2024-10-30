@@ -298,6 +298,7 @@ textarea:focus-visible {
 .mb {
     margin-bottom: 0px;
 }
+
 .fs-sm {
     font-size: 1.188rem;
 }
@@ -310,11 +311,11 @@ textarea:focus-visible {
     font-size: .75rem;
 }
 
-.fs-14{
+.fs-14 {
     font-size: .875rem;
 }
 
-.fs-16{
+.fs-16 {
     font-size: 1rem;
 }
 
@@ -338,7 +339,7 @@ textarea:focus-visible {
     margin-bottom: 10px !important;
 }
 
-.padding-20{
+.padding-20 {
     padding: 20px;
 }
 
@@ -1362,7 +1363,7 @@ a:hover .info-card .svg-arrow {
     font-size: 1.188rem;
     font-weight: 700;
     text-decoration: underline;
-	cursor:pointer;
+    cursor: pointer;
 }
 
 .left-container .left-container-header.active {
@@ -1385,7 +1386,7 @@ a:hover .info-card .svg-arrow {
 }
 
 .left-container ul a:hover {
-	color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .left-container ul a:hover span {
@@ -1393,7 +1394,7 @@ a:hover .info-card .svg-arrow {
 }
 
 .left-container-header:hover {
-	color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .left-container-with-link {
@@ -1401,15 +1402,15 @@ a:hover .info-card .svg-arrow {
 }
 
 .left-container-header a {
-   color: var(--color-white);
+    color: var(--color-white);
 }
 
 .left-container-header a.active {
-   color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 .left-container-header a:hover {
-   color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
 /* .left-container:hover a i {
@@ -1560,7 +1561,7 @@ a:hover .info-card .svg-arrow {
     user-select: none;
 }
 
-.container-input + p {
+.container-input+p {
     margin-top: -10px !important;
 }
 
@@ -1704,12 +1705,12 @@ table thead th {
 
 button.accordion-button.accordion-head {
     font-size: 19px !important;
-    font-weight: 400 !important; 
+    font-weight: 400 !important;
     line-height: 28px !important;
 }
 
 .messageblock.white-bg a {
-   color: var(--color-anchor) !important;
+    color: var(--color-anchor) !important;
 }
 
 .messageblock.blue-bg {
@@ -1729,8 +1730,8 @@ button.accordion-button.accordion-head {
 }
 
 .onlyPrint {
-    display:none !important;
-} 
+    display: none !important;
+}
 
 .white-bg.padding-20.border-blue a {
     color: var(--color-default);
@@ -1749,11 +1750,11 @@ button.accordion-button.accordion-head {
 }
 
 @media print {
- 
+
     .onlyPrint {
         display: block !important;
     }
- 
+
     .footer,
     .help,
     .back,
@@ -1765,38 +1766,39 @@ button.accordion-button.accordion-head {
     #non-printable {
         display: none !important;
     }
- 
+
     #printable {
         display: block;
     }
- 
+
     body {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
- 
+
     .collapse {
         display: block !important;
         height: auto !important;
     }
- 
+
     .order-last-div {
         order: 6;
     }
- 
+
     .accordian-panel .accordion-button::after {
         background-image: none !important;
     }
- 
+
     @media (orientation: landscape) {
-		.order-last-div {
-          width:100%;
+        .order-last-div {
+            width: 100%;
         }
-		.order-first-div {
-		  width: 100%;	
-		}
-	}
- 
+
+        .order-first-div {
+            width: 100%;
+        }
+    }
+
 }
 
 .tick-with-text {
@@ -1815,16 +1817,28 @@ button.accordion-button.accordion-head {
     margin-right: 10px;
 }
 
-.arrow-with-text{
+.arrow-with-text {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.arrow-with-text li{
+.arrow-with-text li {
     margin-bottom: 10px;
 }
 
-.arrow-with-text li i{
+.arrow-with-text li i {
     font-size: 24px;
+}
+
+.arrow-with-text li a {
+    color: var(--color-default);
+}
+
+.arrow-with-text li a:hover {
+    color: var(--color-secondary);
+}
+
+.arrow-with-text li a:hover span {
+    text-decoration: underline;
 }
