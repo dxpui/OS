@@ -1831,7 +1831,7 @@ button.accordion-button.accordion-head {
     font-size: 24px;
 }
 
-.white-bg .arrow-with-text li a {
+.arrow-with-text li a {
     color: var(--color-default);
 }
 
