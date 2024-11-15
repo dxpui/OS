@@ -1106,9 +1106,9 @@ a:hover .info-card .svg-arrow {
         margin-bottom: 15px;
     }
 
-        .left-container ul a.active {
+        /* .left-container ul a.active {
             color: var(--color-secondary);
-        }
+        } */
 
         .left-container ul a:hover span {
             text-decoration: underline;
