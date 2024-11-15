@@ -1652,3 +1652,28 @@ table th, table td {
 .arrow-with-text li a:hover span {
     text-decoration: underline;
 }
+
+
+.left-nav a .arrow-white path,
+.left-nav a .arrow-white circle  {
+    fill: var(--color-white);
+    stroke: var(--color-default);
+}
+
+.left-nav a:hover .arrow-white path,
+.left-nav a:hover .arrow-white circle  {
+    fill: var(--color-secondary);
+    stroke: var(--color-default);
+}
+
+.left-nav a.active .arrow-white path,
+.left-nav a.active .arrow-white circle  {
+    fill: transparent;
+    stroke: var(--color-white) !important;
+}
+
+.left-nav a:hover.active .arrow-white path,
+.left-nav a:hover.active .arrow-white circle  {
+    fill: transparent;
+    stroke: var(--color-secondary) !important;
+}
