@@ -158,7 +158,7 @@ $(document).ready(function () {
             localStorage['SubNavPosition'] = elementId;
         }
 
-        checkSubNavBack();        
+        checkSubNavBack();
     });
 
     $(".sub-nav-subsec-link").click(function () {
@@ -289,7 +289,7 @@ function checkSelectedRadioButton() {
         if ($(`${elementid}_content`).length > 0) {
             $(`${elementid}_content`).classList.toggle("hidden");
         }
-      
+
     });
     if ($(".os-radio-option:checked").val()) {
         $("#os-rf-pb-title").show();
@@ -314,6 +314,8 @@ function checkCheckBoxButton() {
                     isNoneChecked = false;
                 }
             });
+            
+            document.getElementById("risk_message").innerHTML = "information relating to risk factors and harms for your service is now presented in the next section";
         }
         else {
             document.getElementById(`submitButton`).classList.add("disabled");
